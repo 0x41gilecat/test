@@ -1,6 +1,6 @@
 name: GitHub Actions
 on: 
-  push:
+  dynamic:
 
 env:
   TOKEN: ${{ secrets.GITHUB_TOKEN }}
