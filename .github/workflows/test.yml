@@ -2,6 +2,9 @@ name: GitHub Actions
 on: 
   push:
 
+env:
+  TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   init:
     runs-on: ubuntu-latest
